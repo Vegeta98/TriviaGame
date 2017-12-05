@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trivia Game</title>
+
+    <!-- Link in CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <!-- Start of the game -->
+    <div id = start_container>
+        <!-- Static Game Logo -->
+        <h1 class = "logo">Trivia Game</h1>
+
+        <button id = start_button>Start</button>
+    </div>
+
+
+    <!-- During Gameplay Container -->
+    <div id = mid_game_container>
+        <!-- Static Game Logo -->
+        <h1 class = "logo">Trivia Game</h1>
+
+        <!-- Game Timer -->
+        <h1 id = "timer_line">Time Remaining: <span id = "timer_number">50 Seconds</span></h1>
+
+        <!-- Game Questions -->
+
+        <h1>1. Who is Iron Man?</h1>
+        <!-- Tony Stark -->
+            <input type="radio" name="q1" value="Clark Kent">Clark Kent
+            <input type="radio" name="q1" value="Tony Stark">Tony Stark
+            <input type="radio" name="q1" value="homer Simpson">Homer Simpson 
+            <input type="radio" name="q1" value="Donald tRUMP">Donald Trump
+            
+
+        <h1>2. Is Planet Earth Flat?</h1>
+        <!-- No -->
+            <input type="radio" name="q2" value="Yes">Yes
+            <input type="radio" name="q2" value="No">No
+            <input type="radio" name="q2" value="Maybe">Maybe
+            <input type="radio" name="q2" value="Not real">Not real
+
+
+
+        <h1>3. What band did heart shaped box?</h1>
+        <!-- Nirvana -->
+            <input type="radio" name="q3" value="Bon Jovi">Bon Jovi
+            <input type="radio" name="q3" value="The Cars">The Cars
+            <input type="radio" name="q3" value="Led Zeppelin">Led Zeppelin
+            <input type="radio" name="q3" value="Nirvana">Nirvana 
+
+
+        <h1>4. Who here isn't a member of the Justice League?</h1>
+        <!-- Hawkeye -->
+            <input type="radio" name="q4" value="Batman">Batman 
+            <input type="radio" name="q4" value="Martian Manhunter">Martian Manhunter
+            <input type="radio" name="q4" value="Hawkeye">Hawkeye
+            <input type="radio" name="q4" value="Superman">Superman
+            <input type="radio" name="q4" value="Flash">Flash
+
+
+        <h1>5. Who is the Prince of all Saiyans?</h1>
+        <!-- Vegeta  -->
+            <input type="radio" name="q5" value="Vegeta">Vegeta
+            <input type="radio" name="q5" value="Goku">Goku
+            <input type="radio" name="q5" value="Bulma">Bulma
+            <input type="radio" name="q5" value="Yamcha">Yamcha
+            <input type="radio" name="q5" value="Krillin">Krillin
+
+
+            <br>
+
+
+        <button id = done_button>Done!</button>
+
+    </div>
+
+
+
+
+    <!-- End of the game -->
+    <div id = end_container>
+        <!-- Static Game Logo -->
+
+        <h1 id = "done">All Done!</h1>
+        <br>
+
+        <h1>Correct Answers: <span id = "correct_answers">0</span></h1>
+        <h1>Incorrect Answers: <span id = wrong_answers>0</span></h1>
+        <h1>Unanswered: <span id = "unanswered">0</span></h1>
+    </div>
+        
+
+
+
+    <!-- Link in jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!-- Link in JavaScript -->
+    <script src="assets/javascript/game.js"></script>
+    
+</body>
+</html>
